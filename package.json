@@ -1,0 +1,32 @@
+{
+    "name": "mandate-management-api",
+    "version": "0.0.1",
+    "description": "API for managing mandates, clients, billing and more",
+    "main": "server.js",
+    "dependencies": {
+        "express": "^4.16.4",
+        "winston": "^3.1.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.16.0",
+        "prettier": "1.14.3",
+        "tslint": "^5.11.0",
+        "typescript": "^3.1.6"
+    },
+    "scripts": {
+        "clean": "rm -Rf dist && rm -f logs/*",
+        "compile": "npm run-script clean && node_modules/typescript/bin/tsc -p ./tsconfig.json",
+        "start": "node dist/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mandatorio/mandate-management-api.git"
+    },
+    "author": "Joscelyn Jean",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mandatorio/mandate-management-api/issues"
+    },
+    "homepage": "https://github.com/mandatorio/mandate-management-api#readme"
+}
